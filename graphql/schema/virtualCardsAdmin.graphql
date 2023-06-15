@@ -1,0 +1,299 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+enum CardState {
+  ISSUED
+  FAILED
+  CLOSED
+  SUSPENDED
+}
+
+enum CreditCardNetwork {
+  AMEX
+  DINERS
+  DISCOVER
+  JCB
+  MASTERCARD
+  UNIONPAY
+  VISA
+  OTHER
+}
+
+"""
+ACTIVE: Funding source is completely set up and in a state suitable
+for funding virtual card transactions
+
+INACTIVE: Funding source is inactive. Is not usable for funding of new transactions
+but may receive refunds or additional charges on partially complete transactions.
+
+REFRESH: Funding source requires a provider-specific refresh. Is currently active
+(and obeys other status associated with ACTIVE) but may be moved to INACTIVE if user
+intervention does not occur.
+"""
+enum FundingSourceState {
+  ACTIVE
+  INACTIVE
+  REFRESH
+}
+
+enum CardType {
+  CREDIT
+  DEBIT
+  PREPAID
+  OTHER
+}
+
+enum BankAccountType {
+  SAVINGS
+  CHECKING
+  OTHER
+}
+
+interface CommonObject {
+  """
+  ID of the object
+  """
+  id: ID!
+
+  """
+  ID of the user which owns the object.
+  """
+  owner: ID!
+
+  """
+  Update version of the object
+  """
+  version: Int!
+
+  """
+  Time in milliseconds since 1970-01-01T00:00:00Z when object
+  was created
+  """
+  createdAtEpochMs: Float!
+
+  """
+  Time in milliseconds since 1970-01-01T00:00:00Z when object
+  last updated
+  """
+  updatedAtEpochMs: Float!
+}
+
+"""
+Funding sources (will implement CommonObject when interface extension is supported)
+"""
+interface CommonFundingSource {
+  """
+  State of funding source
+  """
+  state: FundingSourceState!
+
+  """
+  Billing currency of the funding source as 3 character ISO
+  currency code.
+  """
+  currency: String!
+
+  """
+  Fingerprint of the funding source. Used to detect duplicates.
+  """
+  fingerprint: ID!
+}
+
+type CreditCardFundingSource implements CommonObject & CommonFundingSource {
+  """
+  See CommonObject.id
+  """
+  id: ID!
+
+  """
+  See CommonObject.owner
+  """
+  owner: ID!
+
+  """
+  See CommonObject.version
+  """
+  version: Int!
+
+  """
+  See CommonObject.createdAtEpochMs
+  """
+  createdAtEpochMs: Float!
+
+  """
+  See CommonObject.updatedAtEpochMs
+  """
+  updatedAtEpochMs: Float!
+
+  """
+  See CommonFundingSource.state
+  """
+  state: FundingSourceState!
+
+  """
+  See CommonFundingSource.currency
+  """
+  currency: String!
+
+  """
+  See CommonFundingSource.fingerprint
+  """
+  fingerprint: ID!
+
+  """
+  Last 4 digits of user's credit card
+  """
+  last4: String!
+
+  """
+  Type of card
+  """
+  cardType: CardType!
+
+  """
+  Card network of card
+  """
+  network: CreditCardNetwork!
+}
+
+type SignedAuthorizationText {
+  """
+  Data that is signed. This is a serialised JSON document of the form:
+  {
+    "hash":"<base64-encoded-hash-of-authorization-agreement-text-agreed-to>",
+    "hashAlgorithm":"<algorithm-used-to-hash-the-agreement-text>",
+    "signedAt":"<ISO8601-UTC-timestamp-of-time-signature-generated>",
+    "account":"<unique-identifier-of-account-agreement-pertains-to>",
+  }
+  """
+  data: String!
+
+  """
+  Base64 encoded signature of the data
+  """
+  signature: String!
+  """
+  Algorithm used to generate the signature.
+  """
+  algorithm: String!
+
+  """
+  ID of public key registered with the virtual cards service corresponding
+  to the private key used to generate the signature
+  """
+  keyId: String!
+
+  """
+  Full content of the agreement
+  """
+  content: String!
+
+  """
+  Content type of the agreement. For example text/plain or text/html.
+  """
+  contentType: String!
+
+  """
+  RFC 5646 language tag specifying the language of the agreement
+  """
+  language: String!
+}
+
+type BankAccountFundingSource implements CommonObject & CommonFundingSource {
+  """
+  See CommonObject.id
+  """
+  id: ID!
+
+  """
+  See CommonObject.owner
+  """
+  owner: ID!
+
+  """
+  See CommonObject.version
+  """
+  version: Int!
+
+  """
+  See CommonObject.createdAtEpochMs
+  """
+  createdAtEpochMs: Float!
+
+  """
+  See CommonObject.updatedAtEpochMs
+  """
+  updatedAtEpochMs: Float!
+
+  """
+  State of funding source.
+  """
+  state: FundingSourceState!
+
+  """
+  Currency that funding source is denominated in.
+  """
+  currency: String!
+
+  """
+  The unique fingerprint of the funding source.
+  """
+  fingerprint: ID!
+
+  """
+  Last 4 digits of user's bank account number.
+  """
+  last4: String!
+
+  """
+  Bank account type
+  """
+  bankAccountType: BankAccountType!
+
+  """
+  The signed authorization providing authority to transact on the bank account.
+  """
+  authorization: SignedAuthorizationText!
+}
+
+union FundingSource = CreditCardFundingSource | BankAccountFundingSource
+
+"""
+Request to manually set a funding source specified by its identifier to a REFRESH
+state.
+"""
+input SetFundingSourceToRequireRefreshRequest {
+  fundingSourceId: String!
+}
+
+type Query {
+  """
+  Generates and returns the Plaid sandbox public token and account id required to
+  provide information to build the bank account funding source completion data.
+  """
+  getPlaidSandboxData(
+    input: GetPlaidSandboxDataRequest!
+  ): GetPlaidSandboxDataResponse!
+    @aws_cognito_user_pools(
+      cognito_groups: ["[TENANT]/Developer", "[TENANT]/Admin"]
+    )
+    @aws_iam
+    @aws_api_key
+}
+
+type Mutation {
+  """
+  Manually set a funding source specified by its identifier to a REFRESH
+  state.
+  """
+  setFundingSourceToRequireRefresh(
+    input: SetFundingSourceToRequireRefreshRequest!
+  ): FundingSource!
+    @aws_cognito_user_pools(
+      cognito_groups: ["[TENANT]/Developer", "[TENANT]/Admin"]
+    )
+    @aws_iam
+    @aws_api_key
+}

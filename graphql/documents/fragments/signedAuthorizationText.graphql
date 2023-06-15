@@ -1,0 +1,9 @@
+fragment SignedAuthorizationText on SignedAuthorizationText {
+  data
+  signature
+  algorithm
+  keyId
+  content
+  contentType
+  language
+}
