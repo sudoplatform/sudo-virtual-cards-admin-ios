@@ -1,13 +1,14 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 PROJECT_NAME = 'SudoVirtualCardsAdmin'
-IOS_TARGET_VERSION = '16.2'
+IOS_TARGET_VERSION = '15.0'
 
 platform :ios, IOS_TARGET_VERSION
 use_frameworks!
 inhibit_all_warnings!
 
 target PROJECT_NAME do
+  inherit! :search_paths
   podspec :name => PROJECT_NAME
   pod 'SudoConfigManager', '~> 3.0'
   pod 'SudoLogging', '~> 1.0'
@@ -26,23 +27,12 @@ target PROJECT_NAME do
   end
 end
 
+# Set iOS deployment target version for all pods.
 post_install do |installer|
-  # Set iOS deployment target version for all pods.
   installer.generated_projects.each do |project|
-    project.build_configurations.each do |config|
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = IOS_TARGET_VERSION
-    end
     project.targets.each do |target|
       target.build_configurations.each do |config|
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = IOS_TARGET_VERSION
-      end
-    end
-  end
-  # Set flag `ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` for all pods.
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      if config.name == PROJECT_NAME
-        config.build_settings['ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES'] = '$(inherited)'
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = IOS_TARGET_VERSION
       end
     end
   end
