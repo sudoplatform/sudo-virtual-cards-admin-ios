@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B341DADDB4B4D280CDABCFD /* Pods_SudoVirtualCardsAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724DB4279F7F46C087959103 /* Pods_SudoVirtualCardsAdmin.framework */; };
 		51197BC52A29CC20000B6B19 /* MockAWSNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51197BC42A29CC20000B6B19 /* MockAWSNetworkTransport.swift */; };
 		51197BC72A29CE0F000B6B19 /* GraphQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51197BC62A29CE0F000B6B19 /* GraphQL.swift */; };
 		51197BCA2A29D24C000B6B19 /* SudoVirtualCardsAdminClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51197BC92A29D24C000B6B19 /* SudoVirtualCardsAdminClient.swift */; };
@@ -52,8 +51,9 @@
 		51F341352A28211500628FD6 /* BankAccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F341342A28211500628FD6 /* BankAccountType.swift */; };
 		51F341372A28424400628FD6 /* DefaultSudoVirtualCardsAdminClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F341362A28424400628FD6 /* DefaultSudoVirtualCardsAdminClient.swift */; };
 		51F341392A2846D200628FD6 /* FundingSourceStateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F341382A2846D200628FD6 /* FundingSourceStateTransformer.swift */; };
-		97BDF98181E4CE6998E7F9AD /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE9617B922B749D71035D08 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework */; };
-		EFFACFF056F3D5857C8D88D1 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0296CA0398DD8A8C110DEA8B /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework */; };
+		6A1369C62021681C23A0DB90 /* Pods_SudoVirtualCardsAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9268C2A0E91220D1038149E9 /* Pods_SudoVirtualCardsAdmin.framework */; };
+		A854C392B97AB6BD18D10A7E /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0160B67AB55EF384135A5BD0 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework */; };
+		BA140388388382F06897D4D5 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCB73B728D1F0B183D722C5 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,10 +81,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0296CA0398DD8A8C110DEA8B /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ED4ABE006CACA1241748C22 /* Pods-SudoVirtualCardsAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin.debug.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin/Pods-SudoVirtualCardsAdmin.debug.xcconfig"; sourceTree = "<group>"; };
-		2A55EDC10EC856B3DE76C707 /* Pods-SudoVirtualCardsAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin.release.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin/Pods-SudoVirtualCardsAdmin.release.xcconfig"; sourceTree = "<group>"; };
-		3DE9617B922B749D71035D08 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0160B67AB55EF384135A5BD0 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A6F283873B4118A156933F /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DCB73B728D1F0B183D722C5 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51197BB22A2862EB000B6B19 /* graphqlCodegen.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = graphqlCodegen.js; sourceTree = "<group>"; };
 		51197BB32A2862EB000B6B19 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		51197BB52A2862EB000B6B19 /* sandbox.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = sandbox.graphql; sourceTree = "<group>"; };
@@ -156,11 +155,12 @@
 		51F341342A28211500628FD6 /* BankAccountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountType.swift; sourceTree = "<group>"; };
 		51F341362A28424400628FD6 /* DefaultSudoVirtualCardsAdminClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSudoVirtualCardsAdminClient.swift; sourceTree = "<group>"; };
 		51F341382A2846D200628FD6 /* FundingSourceStateTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundingSourceStateTransformer.swift; sourceTree = "<group>"; };
-		70E337D89222D58887FFCDE7 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		724DB4279F7F46C087959103 /* Pods_SudoVirtualCardsAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoVirtualCardsAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3F6EC4794E7027621DAE9F5 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CAE6AE18F8BC69A2BCDA3EED /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig"; sourceTree = "<group>"; };
-		EBD97C6EA739790793EBE50C /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		589F3EBC93B75F5689C2ACDA /* Pods-SudoVirtualCardsAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin.release.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin/Pods-SudoVirtualCardsAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		84FF03113729E7F042D3417F /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D70F8447A8E1375FE14CAE9 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig"; sourceTree = "<group>"; };
+		9268C2A0E91220D1038149E9 /* Pods_SudoVirtualCardsAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudoVirtualCardsAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7E84840536CA2DED6AAF03 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7BBF48BB52D9520560F4788 /* Pods-SudoVirtualCardsAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SudoVirtualCardsAdmin.debug.xcconfig"; path = "Target Support Files/Pods-SudoVirtualCardsAdmin/Pods-SudoVirtualCardsAdmin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B341DADDB4B4D280CDABCFD /* Pods_SudoVirtualCardsAdmin.framework in Frameworks */,
+				6A1369C62021681C23A0DB90 /* Pods_SudoVirtualCardsAdmin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51592BD02A1D8F8300F18DC5 /* SudoVirtualCardsAdmin.framework in Frameworks */,
-				97BDF98181E4CE6998E7F9AD /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework in Frameworks */,
+				BA140388388382F06897D4D5 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51592C422A1EE2C600F18DC5 /* SudoVirtualCardsAdmin.framework in Frameworks */,
-				EFFACFF056F3D5857C8D88D1 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework in Frameworks */,
+				A854C392B97AB6BD18D10A7E /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,12 +203,12 @@
 		16C9F7FF9116188A007531DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1ED4ABE006CACA1241748C22 /* Pods-SudoVirtualCardsAdmin.debug.xcconfig */,
-				2A55EDC10EC856B3DE76C707 /* Pods-SudoVirtualCardsAdmin.release.xcconfig */,
-				70E337D89222D58887FFCDE7 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig */,
-				EBD97C6EA739790793EBE50C /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig */,
-				B3F6EC4794E7027621DAE9F5 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig */,
-				CAE6AE18F8BC69A2BCDA3EED /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig */,
+				F7BBF48BB52D9520560F4788 /* Pods-SudoVirtualCardsAdmin.debug.xcconfig */,
+				589F3EBC93B75F5689C2ACDA /* Pods-SudoVirtualCardsAdmin.release.xcconfig */,
+				DE7E84840536CA2DED6AAF03 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig */,
+				84FF03113729E7F042D3417F /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig */,
+				46A6F283873B4118A156933F /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig */,
+				8D70F8447A8E1375FE14CAE9 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -495,9 +495,9 @@
 			isa = PBXGroup;
 			children = (
 				51592BF92A1D989400F18DC5 /* SudoLogging.framework */,
-				724DB4279F7F46C087959103 /* Pods_SudoVirtualCardsAdmin.framework */,
-				0296CA0398DD8A8C110DEA8B /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework */,
-				3DE9617B922B749D71035D08 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework */,
+				9268C2A0E91220D1038149E9 /* Pods_SudoVirtualCardsAdmin.framework */,
+				0160B67AB55EF384135A5BD0 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminIntegrationTests.framework */,
+				4DCB73B728D1F0B183D722C5 /* Pods_SudoVirtualCardsAdmin_SudoVirtualCardsAdminTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -520,7 +520,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51592BD72A1D8F8300F18DC5 /* Build configuration list for PBXNativeTarget "SudoVirtualCardsAdmin" */;
 			buildPhases = (
-				40908B407C4960F5D07C587F /* [CP] Check Pods Manifest.lock */,
+				A3B07079D864B967499D2533 /* [CP] Check Pods Manifest.lock */,
 				51592BC12A1D8F8200F18DC5 /* Headers */,
 				51592BC22A1D8F8200F18DC5 /* Sources */,
 				51592BC32A1D8F8200F18DC5 /* Frameworks */,
@@ -540,11 +540,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51592BDA2A1D8F8300F18DC5 /* Build configuration list for PBXNativeTarget "SudoVirtualCardsAdminTests" */;
 			buildPhases = (
-				017BFB3AB4BF8109868F464C /* [CP] Check Pods Manifest.lock */,
+				3F12BE904876D47C8605A3AE /* [CP] Check Pods Manifest.lock */,
 				51592BCB2A1D8F8300F18DC5 /* Sources */,
 				51592BCC2A1D8F8300F18DC5 /* Frameworks */,
 				51592BCD2A1D8F8300F18DC5 /* Resources */,
-				1218DFFFD1B4A4815371B468 /* [CP] Embed Pods Frameworks */,
+				4E5B082B743214A40AE30842 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -578,12 +578,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51592C3F2A1EE17700F18DC5 /* Build configuration list for PBXNativeTarget "SudoVirtualCardsAdminIntegrationTests" */;
 			buildPhases = (
-				11B39EEF8BF072A93A0137A2 /* [CP] Check Pods Manifest.lock */,
+				A88D8BE21A8197A6961328E3 /* [CP] Check Pods Manifest.lock */,
 				51592C222A1EE17600F18DC5 /* Sources */,
 				51592C232A1EE17600F18DC5 /* Frameworks */,
 				51592C242A1EE17600F18DC5 /* Resources */,
 				51592C462A1EE2FC00F18DC5 /* Copy Config */,
-				9C8342154F373AB4C790D3D7 /* [CP] Embed Pods Frameworks */,
+				B224EACB67053A2AE5E909A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -678,7 +678,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		017BFB3AB4BF8109868F464C /* [CP] Check Pods Manifest.lock */ = {
+		3F12BE904876D47C8605A3AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -700,29 +700,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		11B39EEF8BF072A93A0137A2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1218DFFFD1B4A4815371B468 /* [CP] Embed Pods Frameworks */ = {
+		4E5B082B743214A40AE30842 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -737,28 +715,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		40908B407C4960F5D07C587F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SudoVirtualCardsAdmin-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		51592C012A1DC44D00F18DC5 /* Lint */ = {
@@ -816,7 +772,51 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp -f config/* \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\n";
 		};
-		9C8342154F373AB4C790D3D7 /* [CP] Embed Pods Frameworks */ = {
+		A3B07079D864B967499D2533 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SudoVirtualCardsAdmin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A88D8BE21A8197A6961328E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B224EACB67053A2AE5E909A3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -925,7 +925,7 @@
 /* Begin XCBuildConfiguration section */
 		51592BD82A1D8F8300F18DC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1ED4ABE006CACA1241748C22 /* Pods-SudoVirtualCardsAdmin.debug.xcconfig */;
+			baseConfigurationReference = F7BBF48BB52D9520560F4788 /* Pods-SudoVirtualCardsAdmin.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -950,6 +950,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.sudovirtualcardsadmin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -960,7 +963,7 @@
 		};
 		51592BD92A1D8F8300F18DC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A55EDC10EC856B3DE76C707 /* Pods-SudoVirtualCardsAdmin.release.xcconfig */;
+			baseConfigurationReference = 589F3EBC93B75F5689C2ACDA /* Pods-SudoVirtualCardsAdmin.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -985,6 +988,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.sudovirtualcardsadmin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -996,7 +1002,7 @@
 		};
 		51592BDB2A1D8F8300F18DC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3F6EC4794E7027621DAE9F5 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig */;
+			baseConfigurationReference = 46A6F283873B4118A156933F /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = UU2W43R8JA;
@@ -1006,7 +1012,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.sudovirtualcardsadmintests;
 				PRODUCT_NAME = SudoVirtualCardsAdminTests;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1015,7 +1021,7 @@
 		};
 		51592BDC2A1D8F8300F18DC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAE6AE18F8BC69A2BCDA3EED /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig */;
+			baseConfigurationReference = 8D70F8447A8E1375FE14CAE9 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = UU2W43R8JA;
@@ -1025,7 +1031,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.sudovirtualcardsadmintests;
 				PRODUCT_NAME = SudoVirtualCardsAdminTests;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1060,7 +1066,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1097,7 +1103,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1108,18 +1114,22 @@
 		};
 		51592C3A2A1EE17700F18DC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70E337D89222D58887FFCDE7 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig */;
+			baseConfigurationReference = DE7E84840536CA2DED6AAF03 /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UU2W43R8JA;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.sudovirtualcardsadminintegrationtests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1129,18 +1139,22 @@
 		};
 		51592C3B2A1EE17700F18DC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBD97C6EA739790793EBE50C /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig */;
+			baseConfigurationReference = 84FF03113729E7F042D3417F /* Pods-SudoVirtualCardsAdmin-SudoVirtualCardsAdminIntegrationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UU2W43R8JA;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudoplatform.sudovirtualcardsadminintegrationtests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1262,6 +1276,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
