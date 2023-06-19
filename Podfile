@@ -1,5 +1,3 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
 PROJECT_NAME = 'SudoVirtualCardsAdmin'
 IOS_TARGET_VERSION = '15.0'
 
@@ -10,8 +8,6 @@ inhibit_all_warnings!
 target PROJECT_NAME do
   inherit! :search_paths
   podspec :name => PROJECT_NAME
-  pod 'SudoConfigManager', '~> 3.0'
-  pod 'SudoLogging', '~> 1.0'
 
   target 'SudoVirtualCardsAdminTests' do
     podspec :name => PROJECT_NAME
